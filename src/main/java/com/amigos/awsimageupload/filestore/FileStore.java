@@ -32,7 +32,7 @@ public class FileStore {
         try{
             s3.putObject(path, fileName, inputStream, metaData);
         }catch(AmazonServiceException e){
-            throw new IllegalStateException("Failed to store file s3", e);
+            throw new IllegalStateException("Failed to store file s3 random extra", e);
         }
     }
 }
